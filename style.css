@@ -11,9 +11,13 @@
 	padding:0;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
+	color:#333;
 }
-.container{
-	background:#f9f9f9;
+.container { 
+  background:#f9f9f9;
+  background-image:url(starbucks-logo.png);
+  background-repeat:no-repeat;
+  font-size:16px;
 }
 body{
 	background:#E8E8E8;
@@ -32,20 +36,48 @@ h1, h3 {
 	color:#016646;
 }
 .img-rounded {
+	width:100%;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
 	border-bottom-left-radius:0;
 	border-bottom-right-radius:0;
 	border-bottom:5px solid #016646;
 }
-.faq-group{
 
+.text-offer{
+	padding:10px;
+}
+
+
+/* offer styles */
+.offer-group {
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 10px #e5e5e5;
+  border-radius: 10px;
+  background-color:#fff;
+}
+form{
+	padding:10px;
+}
+#claim-btn{
+	width:100%;
+	background:#f18200;
+	color:#fff;
+	border:#fca53f;
+	font-weight:600;
+}
+#claim-btn:hover{
+	background:#fca53f;
+}
+.disclaimer{
+	font-style:italic;
+	font-size:12px;
+	color:#e5e5e5;
+	padding:10px;
 }
 footer{
-	margin-top:50px;
+	font-size:12px;
 }
-
-
-
-
 
 
 /* Faqs Styles */
@@ -66,11 +98,11 @@ a:active {
   transition: height 0.005s;
 }
 
-.accordian-group {
+/*.accordian-group {
   border: 1px solid #e5e5e5;
   box-shadow: 1px 1px 10px #e5e5e5;
   border-radius: 10px;
-}
+}*/
 
 .panel {
   border: none;
@@ -99,15 +131,29 @@ a:active {
   background: transparent;
 }
 
-.panel-group {
+/*.panel-group {
   margin-bottom: 5px;
+}*/
+
+.panel-group{
+	border: 1px solid #e5e5e5;
+	border-radius:11px;
+  box-shadow: 1px 1px 10px #e5e5e5;
 }
 
 .panel-group .panel {
+/*  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;*/
+  border-radius: 0;
+}
+
+.panel-group .panel:first-of-type {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+}
+.panel-group .panel:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .panel-group .panel+.panel {
@@ -145,4 +191,22 @@ panel-body {
   font-family: Fontawesome;
   content: '\f067';
   font-size: 14px;
+}
+
+
+
+/* media queries */
+@media (max-width: 991px){
+	.text-about{
+		text-align:center;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+}
+
+@media (min-width:991px){
+	footer{
+		margin-top:30px;
+		margin-bottom:50px;
+	}
 }

@@ -35,7 +35,6 @@
 <body>
 
 <div class="container">
-
 <div class="row">
   <header><img src="https://ecommission.com/img/logos/ecommission-logo.png" alt=""></header>
 </div>
@@ -43,21 +42,32 @@
 <div class="row">
   <main class="text-center">
     <h1>FREE STARBUCKS</h1>
-    <p><strong>eCommission</strong> would like to give you a free $5 Starbucks card. No need to sign up for anything. Simply fill out the form below and we will send you a gift card via email within 2 business days. It is our way of showing appreciation for all that you do as a broker.</p>
+    <p class="text-offer"><strong>eCommission</strong> would like to give you a free $5 Starbucks card. No need to sign up for anything. Simply fill out the form below and we will send you a gift card via email within 2 business days. It is our way of showing appreciation for all that you do as a broker.</p>
   </main>
 </div>
 
 <div class="row">
-  <div class="col-md-6 form-group">
-  	<div class="accordian-group">
-    <img class="img-responsive img-rounded" src="http://goo.gl/LgBOso" alt="">
-    <h3>CLAIM YOUR GIFT CARD!</h3>
-    Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod.
+  <div class="col-md-6">
+  	<div class="offer-group">
+    <img class="img-responsive img-rounded" src="sb-card.jpg" alt="">
+    <h3 class="text-center">CLAIM YOUR GIFT CARD!</h3>
+    <form>
+    <div class="form-group">
+    	<label for="name">First & Last Name</label>
+        <input type="text" class="form-control" name="user" id="name">
+    </div>
+    <div class="form-group">
+    	<label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+    <input name="claim" type="submit" class="btn btn-primary btn-lg" id="claim-btn" value="CLAIM GIFT CARD NOW">
+    </form>
+    <p class="disclaimer">*Please check your email and click the link to obtain your Free Startbucks Gift Card.</p>
     </div>
   </div>
   
   <div class="col-md-6 faq-group">
-  <p><strong>eCommission</strong> is the <strong>#1 provider</strong> of commission advance services to real estate professionals in the United States. Our service puts you in complete control of your cash flow by advancing your commissions whenever you want them.</p>
+  <p class="text-about text-spacing"><strong>eCommission</strong> is the <strong>#1 provider</strong> of commission advance services to real estate professionals in the United States. Our service puts you in complete control of your cash flow by advancing your commissions whenever you want them.</p>
 
   <div class="accordian-group">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -100,7 +110,7 @@
 </div>
 
 <div class="row">
-<footer>
+<footer >
 <p class="text-center"><strong>©2015 eCommission Financial Services, Inc.</strong></p>
 </footer>
 </div>
